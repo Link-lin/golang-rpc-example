@@ -10,7 +10,7 @@ type Quotient struct {
 	Quo, Rem int
 }
 
-type Arith int
+type Arith struct{}
 
 func (t *Arith) Multiply(args *Args, reply *int) error {
 	*reply = args.A * args.B
